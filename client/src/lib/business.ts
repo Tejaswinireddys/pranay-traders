@@ -10,8 +10,8 @@ export const BUSINESS = {
   emailPrimary: "pranaytradersap@gmail.com",
   emailSecondary: "contact@pranaytraders.com",
   linkedin: "https://www.linkedin.com/company/pranay-traders",
-  instagram: "https://www.instagram.com/pranaytraders_ap",
-  instagramHandle: "@pranaytraders_ap",
+  instagram: "https://www.instagram.com/pranaytradersap",
+  instagramHandle: "@pranaytradersap",
   facebook: "https://www.facebook.com/pranaytraders.ap",
   linkedinName: "Pranay Traders",
   // Google Maps embed centered on Andhra Pradesh
