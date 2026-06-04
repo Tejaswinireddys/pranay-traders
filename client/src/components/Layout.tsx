@@ -11,6 +11,7 @@ import {
   MapPin,
   Linkedin,
   Instagram,
+  Facebook,
   Sun,
   Moon,
 } from "lucide-react";
@@ -164,6 +165,16 @@ function Footer() {
               className="flex h-9 w-9 items-center justify-center rounded-md border border-sidebar-border hover-elevate"
             >
               <Instagram className="h-4 w-4" />
+            </a>
+            <a
+              href={BUSINESS.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              data-testid="link-footer-facebook"
+              className="flex h-9 w-9 items-center justify-center rounded-md border border-sidebar-border hover-elevate"
+            >
+              <Facebook className="h-4 w-4" />
             </a>
             <a
               href={whatsappLink("Hello Pranay Traders, I would like to enquire about charcoal supply.")}

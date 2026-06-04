@@ -12,6 +12,7 @@ export const BUSINESS = {
   linkedin: "https://www.linkedin.com/company/pranay-traders",
   instagram: "https://www.instagram.com/pranaytraders_ap",
   instagramHandle: "@pranaytraders_ap",
+  facebook: "https://www.facebook.com/pranaytraders.ap",
   linkedinName: "Pranay Traders",
   // Google Maps embed centered on Andhra Pradesh
   mapsEmbed:
