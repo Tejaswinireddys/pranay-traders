@@ -12,6 +12,7 @@ export const BUSINESS = {
   linkedin: "https://www.linkedin.com/company/pranay-traders",
   instagram: "https://www.instagram.com/pranaytraders_ap",
   instagramHandle: "@pranaytraders_ap",
+  linkedinName: "Pranay Traders",
   // Google Maps embed centered on Andhra Pradesh
   mapsEmbed:
     "https://www.google.com/maps?q=Andhra+Pradesh,+India&output=embed",
@@ -20,4 +21,11 @@ export const BUSINESS = {
 export function whatsappLink(message?: string) {
   const base = `https://wa.me/${BUSINESS.whatsapp}`;
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
+}
+
+// Opens Gmail's compose window in the browser, addressed to the given email.
+export function gmailComposeLink(to: string, subject?: string) {
+  const params = new URLSearchParams({ view: "cm", fs: "1", to });
+  if (subject) params.set("su", subject);
+  return `https://mail.google.com/mail/?${params.toString()}`;
 }

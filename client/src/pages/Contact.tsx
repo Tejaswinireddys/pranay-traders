@@ -4,7 +4,7 @@ import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { insertInquirySchema, type InsertInquiry } from "@shared/schema";
-import { BUSINESS, whatsappLink } from "@/lib/business";
+import { BUSINESS, whatsappLink, gmailComposeLink } from "@/lib/business";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -271,13 +271,23 @@ export default function Contact() {
                     Email
                   </p>
                   <a
-                    href={`mailto:${BUSINESS.emailPrimary}`}
+                    href={gmailComposeLink(
+                      BUSINESS.emailPrimary,
+                      "Charcoal Inquiry — Pranay Traders"
+                    )}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block truncate font-semibold text-foreground hover:text-primary"
                   >
                     {BUSINESS.emailPrimary}
                   </a>
                   <a
-                    href={`mailto:${BUSINESS.emailSecondary}`}
+                    href={gmailComposeLink(
+                      BUSINESS.emailSecondary,
+                      "Charcoal Inquiry — Pranay Traders"
+                    )}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block truncate text-sm text-muted-foreground hover:text-primary"
                   >
                     {BUSINESS.emailSecondary}

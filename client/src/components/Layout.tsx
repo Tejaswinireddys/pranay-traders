@@ -1,7 +1,7 @@
 import { ReactNode, useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Logo } from "./Logo";
-import { BUSINESS, whatsappLink } from "@/lib/business";
+import { BUSINESS, whatsappLink, gmailComposeLink } from "@/lib/business";
 import { Button } from "@/components/ui/button";
 import {
   Menu,
@@ -224,13 +224,23 @@ function Footer() {
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
               <div className="flex flex-col">
                 <a
-                  href={`mailto:${BUSINESS.emailPrimary}`}
+                  href={gmailComposeLink(
+                    BUSINESS.emailPrimary,
+                    "Charcoal Inquiry — Pranay Traders"
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                 >
                   {BUSINESS.emailPrimary}
                 </a>
                 <a
-                  href={`mailto:${BUSINESS.emailSecondary}`}
+                  href={gmailComposeLink(
+                    BUSINESS.emailSecondary,
+                    "Charcoal Inquiry — Pranay Traders"
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                 >
                   {BUSINESS.emailSecondary}
